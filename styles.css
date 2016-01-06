@@ -1,0 +1,43 @@
+body {
+	max-width: 960px;
+}
+
+.nav {
+	background-color: #FFB4B0;
+	height: 40px;
+	width: 100%;
+	border: 2px solid black;
+	padding: 10px 10px 0 10px;
+	margin: 0 auto;
+}
+
+.nav > li {
+	list-style-type: none;
+	display: inline;
+	padding: 2px;
+	margin-top: 5px;
+}
+
+.nav + li {
+	border-right: 1px solid black;
+}
+
+div#sidebar {
+	background-color: #4DD7FA;
+	width: 25%;
+	height: 300px;
+	border: 2px solid black;
+	float: left;
+	margin: 5px 15px 0 5px;
+	padding: 5px;
+}
+
+div#main-content {
+	background-color: #FEFAC0;
+	width: 65%;
+	height: 300px;
+	border: 2px solid black;
+	margin: 5px 15px 0 5px;
+	padding: 5px;
+	float: right;
+}
