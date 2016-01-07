@@ -1,11 +1,19 @@
+* {
+	border-sizing: border-box;
+}
+
 body {
-	max-width: 960px;
+	font-family: Arial;
+}
+
+.container {
+	max-width: 80%;
 }
 
 .nav {
 	background-color: #FFB4B0;
-	height: 40px;
 	width: 100%;
+	height: 40px;
 	border: 2px solid black;
 	padding: 10px 10px 0 10px;
 	margin: 0 auto;
@@ -19,25 +27,40 @@ body {
 }
 
 .nav + li {
-	border-right: 1px solid black;
+	border-right: 2px solid black;
 }
 
-div#sidebar {
+#filter-button {
+	font-size: 20px;
+	border: 2px solid black;
+}
+
+aside {
 	background-color: #4DD7FA;
 	width: 25%;
 	height: 300px;
 	border: 2px solid black;
 	float: left;
-	margin: 5px 15px 0 5px;
+	margin: 5px 5px 0 5px;
 	padding: 5px;
 }
 
 div#main-content {
 	background-color: #FEFAC0;
 	width: 65%;
-	height: 300px;
 	border: 2px solid black;
-	margin: 5px 15px 0 5px;
+	margin: 5px 5px 0 5px;
 	padding: 5px;
 	float: right;
+}
+
+section.favorite-songs ul > li {
+	list-style-type: none;
+	display: inline;
+	padding: 8px;
+	font-size: 16px;
+}
+
+h3 {
+	padding-left: 10px;
 }
