@@ -99,6 +99,12 @@ h3 {
 	font-size: 1.4em;
 }
 
+li {
+	list-style-type: none;
+	display: inline;
+	padding: .2em;
+}
+
 /* ---- Layout Styling ---- */
 
 .visible {

@@ -2,6 +2,7 @@
 
 let songs = [];
 let newSong = {};
+let addSongs = $("#addSongs");
 let listMusicLink = $("#list-music-link");
 let songSearchView = $("#song-search");
 let addMusicLink = $("#add-music");
@@ -40,9 +41,11 @@ $("#add-button").click(function() {
     newSong.Artist = `${$("#artist-name").val()}`;
     newSong.Album = `${$("#album-name").val()}`;
     newSong.Genre = `${$("select#genre-name").val()}`;
-    console.log("newSong.Genre", newSong.Genre);
     songs.push(newSong);
-    $("#addSongs").html(songs);
+    addSongs.append(`<h3>${newSong.Song}</h3>`)
+    addSongs.append(`<li>${newSong.Artist}</li>`)
+    addSongs.append(`<li>${newSong.Album}</li>`)
+    addSongs.append(`<li>${newSong.Genre}</li>`)
     console.log("songs", songs);
     $("#song-name").val("");
     $("#artist-name").val("");
