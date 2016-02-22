@@ -1,0 +1,16 @@
+{
+  "name": "musichistory",
+  "version": "0.0.0",
+  "homepage": "https://github.com/eorstrom/musichistory-boilerplate",
+  "authors": [
+    "Erin Orstrom <eorstrom2010@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

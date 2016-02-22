@@ -1,48 +1,49 @@
-* {
-	box-sizing: border-box;
-}
-
 .container {
 	max-width: 960px;
-	width: 70%;
 	margin: 0 auto;
 	font-family: Arial;
 }
 
+
 /* ---- Nav Bar Styling ---- */
 
-.nav {
+nav {
 	background-color: #FFB4B0;
-	width: 100%;
-	height: 40px;
 	border: 2px solid black;
-	padding: 10px 10px 0 10px;
 	margin: 1em auto;
+	box-sizing: border-box;
 }
 
-.nav > li {
+.nav-pills {
+	padding: .5em;
+}
+
+.nav li {
 	list-style-type: none;
 	display: inline;
-	padding: 2px;
-	margin: 5px;
+	margin: .5em;
 }
+
+ .nav li a {
+	display: inline;
+	padding: .5em;
+ }
+
 
 /* ---- Aside Styling ---- */
 
 aside {
 	display: inline-block;
 	float: left;
-	width: 25%;
-	height: 400px;
 	margin: 0 auto;
 	padding: 5px;
-	box-sizing: border-box;
 	background-color: #4DD7FA;
 	border: 2px solid black;
+	box-sizing: border-box;
 }
 
 #filter-button {
-	margin: 10% 0 10% 35%;
+	margin: 10% 10% 10% 35%;
 	border: 2px solid black;
 	font-size: 20px;
 }
@@ -71,43 +72,49 @@ input, select {
 
 div#main-content {
 	float: right;
-	display: inline-block;
-	width: 74%;
-	height: 400px;
 	margin: 0 auto;
 	padding: 5px;
-	box-sizing: border-box;
 	background-color: #FEFAC0;
 	border: 2px solid black;
+	box-sizing: border-box;
 }
 
 section.favorite-songs ul > li {
 	display: inline;
 	padding: 8px;
 	list-style-type: none;
-	font-size: 16px;
+	font-size: 1.1em;
 }
 
 h3 {
 	padding-left: 10px;
 	color: #785616;
+	font-size: 1.4em;
 }
 
 /* ---- Layout Styling ---- */
 
-div.box {
-	max-width: 960px;
-	width: 100%;
+.visible {
+  display: block;
 }
 
-.box1 {
-	box-sizing: border-box;
-	width: 25%
-	float: left;
+.hidden {
+  display: none;
 }
 
-.box2 {
-	box-sizing: border-box;
-	width: 75%
-	float: left;
+
+/* ---- Add Music View Styling ---- */
+
+div#add-music-view {
+	width: 35%;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	text-align: left;
+}
+
+button#add {
+	display: block;
 }
