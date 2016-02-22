@@ -1,8 +1,13 @@
-let newSong = [];
+"use strict";
 
-newSong = {
-    "Song": $("addSong").val();
-    "Artist": $("addArtist").val();
-    "Album": $("addAlbum").val();
-    "Genre": $("addGenre").val;
-}
+let addSong, addArtist, addAlbum, addGenre;
+
+
+newSong = {};
+    newSong.Song = $("#add-song").val();
+    newSong.Artist = $("addArtist").val();
+    newSong.Album = $("addAlbum").val();
+    newSong.Genre = $("addGenre").val();
+    songs.push(newSong);
+
+console.log("newSong song", newSong.Song);

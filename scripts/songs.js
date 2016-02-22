@@ -22,21 +22,3 @@ console.log(songs);
 // Print new array 'newSongList' to DOM 
 // document.getElementById("addSongs").innerHTML = songs;
 // console.log(songs);
-
-let addSong, addArtist, addAlbum, addGenre; 
-
-$("#add-button").click(function() {
-    console.log("add-button was clicked.");
-    addSong = $("#song-name").val();
-    addArtist = $("#artist-name").val();
-    addAlbum = $("#album-name").val();
-    addGenre = $("add-genre").val();
-    songs.push(addSong, addArtist, addAlbum);
-    console.log("songs", songs);
-    $("#song-name").val("");
-    $("#artist-name").val("");
-    $("#album-name").val("");
-    $("add-genre").val("");
-});
-
-

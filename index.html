@@ -14,28 +14,28 @@
 			<div class="row">
 				<nav class="col-md-12 col-xs-12">
 					<ul class="nav nav-pills">
-					  <li role="presentation" class="active" id="list-music-link"><a href="#">List Music</a></li>
-					  <li role="presentation" id="add-music"><a href="#">Add Music</a></li>
-					  <li role="presentation" id="profile"><a href="#">Profile</a></li>
+						<li role="presentation" class="active" id="list-music-link"><a href="#">List Music</a></li>
+						<li role="presentation" id="add-music"><a href="#">Add Music</a></li>
+						<li role="presentation" id="profile"><a href="#">Profile</a></li>
 					</ul>
 				</nav>
 			</div>
 
-			<div id="list-view">
-				<div class="row">
-					<aside class="col-md-3 col-xs-3">
-						<form>
+			<div class="row">
+				<div>
+					<aside id="song-search" class="col-md-3 col-xs-3">
+						<div>
 							<label for="song-length">Song Length:</label><br>
 							<input id="song-length" type="range" name="song-length" min="0" max="5:00"><br>
 							<label for="artist">Artist:</label><br>
-							<select id="artist">
-								<option>-----</option>
-								<option>3OH!3</option>
-								<option>Fall Out Boy</option>
-								<option>Hunter Hayes</option>
-								<option>Nickelback</option>
-								<option>Saving Abel</option>
-							</select><br>
+								<select id="artist">
+									<option>-----</option>
+									<option>3OH!3</option>
+									<option>Fall Out Boy</option>
+									<option>Hunter Hayes</option>
+									<option>Nickelback</option>
+									<option>Saving Abel</option>
+								</select><br>
 							<label for="album">Album:</label><br>
 							<select id="album">
 								<option>-----</option>
@@ -46,80 +46,84 @@
 								<option>Saving Abel</option>
 							</select><br>
 							<label>Genre</label><br>
-								<div class="check1">
-									<input type="checkbox" name="genre" value="rock">Rock<br>
-									<input type="checkbox" name="genre" value="pop">Pop<br>
-									<input type="checkbox" name="genre" value="blues">Blues<br>
-								</div>
-								<div class="check2">
-									<input type="checkbox" name="genre" value="classical">Classical<br>
-									<input type="checkbox" name="genre" value="jazz">Jazz<br>
-									<input type="checkbox" name="genre" value="country">Country<br>
-									<input type="checkbox" name="genre" value="hip-hop">Hip Hop
-								</div>
-						</form>
+							<div class="check1">
+								<input type="checkbox" name="genre" value="rock">Rock<br>
+								<input type="checkbox" name="genre" value="pop">Pop<br>
+								<input type="checkbox" name="genre" value="blues">Blues<br>
+							</div>
+							<div class="check2">
+								<input type="checkbox" name="genre" value="classical">Classical<br>
+								<input type="checkbox" name="genre" value="jazz">Jazz<br>
+							<input type="checkbox" name="genre" value="country">Country<br>
+							<input type="checkbox" name="genre" value="hip-hop">Hip Hop
+							</div>
+						</div>
 
+					<div id="filter-div">
 						<button id="filter-button">Filter</button>
-
-					</aside>
-
-					<div id="main-content" class="col-md-8 col-xs-8" >
-						<section class="favorite-songs">
-							<h3>Satellite</h3>
-								<ul>
-									<li>Nickelback |</li>
-									<li>No Fixed Address |</li>
-									<li>Rock</li>
-								</ul>
-							<h3>My Songs Know What You Did In the Dark</h3>
-								<ul>
-									<li>Fall Out Boy |</li>
-									<li>Save Rock and Roll |</li>
-									<li>Pop</li>
-								</ul>
-							<h3>Wanted</h3>
-								<ul>
-									<li>Hunter Hayes |</li>
-									<li>Hunter Hayes |</li>
-									<li>Country</li>
-								</ul>
-							<h3>Addicted</h3>
-								<ul>
-									<li>Saving Abel |</li>
-									<li>Saving Abel |</li>
-									<li>Rock</li>
-								</ul>
-						</section>
-						<div id="addSongs"></div>
 					</div>
-				</div>	<!-- end 2nd 'row' div -->
-			</div>
+					</aside>
+				</div>
 
-			<div id="add-music-view" class="hidden">
-				<fieldset>
+				<div id="add-music-view" class="hidden col-md-3 col-xs-3">
+					<fieldset>
 					<legend>Add A New Song</legend>
-					<label>Name of Song:<input id="song-name" type="text"></label>
-					<label>Name of Artist:<input id="artist-name" type="text"></label>
-					<label>Name of Album:<input id="album-name" type="text"></label>
-					<label>Genre
-					<select id="add-genre">
-						<option>-----</option>
-						<option value="Rock">Rock</option>
-						<option value="Country">Country</option>
-						<option value="Hip Hop">Hip Hop</option>
-						<option value="Alternative">Alternative</option>
-						<option value="Pop">Pop</option>
-					</select>
-					<button id="add-button">Add</button>
-				</fieldset>
-			</div>
+						<label>Name of Song:<input id="song-name" type="text"></label>
+						<label>Name of Artist:<input id="artist-name" type="text"></label>
+						<label>Name of Album:<input id="album-name" type="text"></label>
+						<label>Genre:
+							<select name="genre" id="genre-name">
+								<option>-----</option>
+								<option value="Rock">Rock</option>
+								<option value="Country">Country</option>
+								<option value="Hip Hop">Hip Hop</option>
+								<option value="Alternative">Alternative</option>
+								<option value="Pop">Pop</option>
+							</select>
+						<button id="add-button">Add</button>
+					</fieldset>
+				</div>
+
+				<div id="main-content" class="col-md-8 col-xs-8" >
+					<section class="favorite-songs">
+						<h3>Satellite</h3>
+							<ul>
+								<li>Nickelback |</li>
+								<li>No Fixed Address |</li>
+								<li>Rock</li>
+							</ul>
+						<h3>My Songs Know What You Did In the Dark</h3>
+							<ul>
+								<li>Fall Out Boy |</li>
+								<li>Save Rock and Roll |</li>
+								<li>Pop</li>
+							</ul>
+						<h3>Wanted</h3>
+							<ul>
+								<li>Hunter Hayes |</li>
+								<li>Hunter Hayes |</li>
+								<li>Country</li>
+							</ul>
+						<h3>Addicted</h3>
+							<ul>
+								<li>Saving Abel |</li>
+								<li>Saving Abel |</li>
+								<li>Rock</li>
+							</ul>
+					</section>
+
+					<div id="addSongs"></div>
+				</div>
+			</div>	<!-- end 2nd 'row' div -->
+
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	    <!-- Latest compiled and minified JavaScript -->
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="scripts/songs.js"></script>
+		<!-- <script src="scripts/songs.js"></script> -->
+		<!-- <script src="scripts/newsongs.js"></script> -->
 		<script src="scripts/event-listeners.js"></script>
 	</body>
 </html>
